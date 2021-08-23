@@ -1,0 +1,9 @@
+Z:\Souvik\UESPolicyHeader\UESPolicyHeader\bin\Debug\UESPolicyHeader.exe.config
+Z:\Souvik\UESPolicyHeader\UESPolicyHeader\bin\Debug\UESPolicyHeader.exe
+Z:\Souvik\UESPolicyHeader\UESPolicyHeader\bin\Debug\UESPolicyHeader.pdb
+Z:\Souvik\UESPolicyHeader\UESPolicyHeader\obj\Debug\UESPolicyHeader.csprojResolveAssemblyReference.cache
+Z:\Souvik\UESPolicyHeader\UESPolicyHeader\obj\Debug\UESPolicyHeader.Form1.resources
+Z:\Souvik\UESPolicyHeader\UESPolicyHeader\obj\Debug\UESPolicyHeader.Properties.Resources.resources
+Z:\Souvik\UESPolicyHeader\UESPolicyHeader\obj\Debug\UESPolicyHeader.csproj.GenerateResource.Cache
+Z:\Souvik\UESPolicyHeader\UESPolicyHeader\obj\Debug\UESPolicyHeader.exe
+Z:\Souvik\UESPolicyHeader\UESPolicyHeader\obj\Debug\UESPolicyHeader.pdb

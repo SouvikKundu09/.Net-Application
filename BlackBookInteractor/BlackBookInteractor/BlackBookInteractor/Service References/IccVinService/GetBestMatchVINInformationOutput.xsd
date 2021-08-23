@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:bons1="http://cpi/core/vin_information" xmlns:bons2="http://cpi/core/error" targetNamespace="http://cpi/policy/get_best_match_vin_information_output_epl2x1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="../Schemas/VINInformation.xsd" namespace="http://cpi/core/vin_information" />
+  <xsd:import schemaLocation="../Schemas/Error.xsd" namespace="http://cpi/core/error" />
+  <xsd:complexType name="GetBestMatchVINInformationOutput">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="VINSearchMatchTypeName" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This element contains the type of match that was found.  Possible options for this element include "ExactMatch" and "LowestSymbol".
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="VINInformation" type="bons1:VINInformation" />
+      <xsd:element minOccurs="0" name="ErrorInformation" type="bons2:Error" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:bons1="http://cpi/policy/get_expanded_vin_information_input_epl2x1" targetNamespace="http://cpi/policy/get_expanded_vin_information_list_request_epl2x1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="GetExpandedVINInformationInput.xsd" namespace="http://cpi/policy/get_expanded_vin_information_input_epl2x1" />
+  <xsd:complexType name="GetExpandedVINInformationListRequest">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="GetExpandedVINInformationInput" type="bons1:GetExpandedVINInformationInput" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

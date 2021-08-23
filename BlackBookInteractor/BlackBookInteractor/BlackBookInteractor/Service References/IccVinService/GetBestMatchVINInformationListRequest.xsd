@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:bons0="http://cpi/policy/get_best_match_vin_information_input_epl2x1" targetNamespace="http://cpi/policy/get_best_match_vin_information_list_request_epl2x1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="GetBestMatchVINInformationInput.xsd" namespace="http://cpi/policy/get_best_match_vin_information_input_epl2x1" />
+  <xsd:complexType name="GetBestMatchVINInformationListRequest">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="VINSearchTypeName" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This element contains the desired best-match selection criteria. </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="GetBestMatchVINInformationInput" type="bons0:GetBestMatchVINInformationInput" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

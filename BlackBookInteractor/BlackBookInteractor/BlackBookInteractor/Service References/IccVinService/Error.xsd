@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema targetNamespace="http://cpi/core/error" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:complexType name="Error">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="ErrorCode" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This element represents a code associated with an error.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="CPIErrorCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ErrorDescription" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This element contains the description of the error.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="ErrorSeverityLevel" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This element specifies a code that represents success or failure of the service call. 
+
+Valid values for this element are
+ 'I' for Success with additional information to convey
+ 'S' for Success
+ 'E' for Error 
+ 'W' for warning </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="ErrorSourceIdentifier" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This element contains information about the source of the error.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

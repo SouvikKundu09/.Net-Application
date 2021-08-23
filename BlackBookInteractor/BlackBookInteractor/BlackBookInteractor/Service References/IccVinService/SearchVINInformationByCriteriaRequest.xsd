@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema targetNamespace="http://cpi/policy/search_vin_information_by_criteria_request_epl2x1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:complexType name="SearchVINInformationByCriteriaRequest">
+    <xsd:sequence>
+      <xsd:element name="PartialVehicleIdentificationNumber" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This element contains an abbreviated version of a Vehicle Identification Number (the unique number assigned by the manufacturer).  The amount and type of the information provided by the number varies by manufacturer.  Typically, the VIN identifies the manufacturer, model, year and serial number of the vehicle.  </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="ManufacturersName" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This element contains the name used to indentify the manufacturer of the piece of equipment, such as a vehicle or watercraft.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="ModelName" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This element contains the name assigned to a specific piece of equipment by the manufacturer.  It indentifies the specific model within the trade name.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="1" name="ModelYear">
+        <xsd:annotation>
+          <xsd:documentation>This element contains the year assigned to the specific equipment, such as a watercraft or vehicle.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:length value="4" />
+            <xsd:pattern value="\d\d\d\d" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

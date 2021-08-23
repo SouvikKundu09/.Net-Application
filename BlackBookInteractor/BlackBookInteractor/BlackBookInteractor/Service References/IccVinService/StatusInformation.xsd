@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:bons0="http://cpi/core/error" targetNamespace="http://cpi/core/status_information" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="Error.xsd" namespace="http://cpi/core/error" />
+  <xsd:complexType name="StatusInformation">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="Error" type="bons0:Error" />
+      <xsd:element minOccurs="0" name="StatusCode" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This element specifies a code that identifies the type of error.
+
+Valid values are 
+'S' for Sucess, 'E' for Error or 'W' for Warning.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

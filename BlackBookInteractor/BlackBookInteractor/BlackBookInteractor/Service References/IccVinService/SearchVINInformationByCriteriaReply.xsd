@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:bons0="http://cpi/core/status_information" xmlns:bons1="http://cpi/policy/search_vin_information_by_criteria_output_epl2x1" targetNamespace="http://cpi/policy/search_vin_information_by_criteria_reply_epl2x1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="../Schemas/StatusInformation.xsd" namespace="http://cpi/core/status_information" />
+  <xsd:import schemaLocation="SearchVINInformationByCriteriaOutput.xsd" namespace="http://cpi/policy/search_vin_information_by_criteria_output_epl2x1" />
+  <xsd:complexType name="SearchVINInformationByCriteriaReply">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="1" name="SearchVINInformationByCriteriaOutput" type="bons1:SearchVINInformationByCriteriaOutput" />
+      <xsd:element minOccurs="0" name="HighLevelStatusInformation" type="bons0:StatusInformation" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

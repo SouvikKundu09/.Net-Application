@@ -1,0 +1,9 @@
+C:\Kuntal Work\Project Work\FormsSetupTool\FormsSetupTools\BLL\bin\Debug\BLL.dll
+C:\Kuntal Work\Project Work\FormsSetupTool\FormsSetupTools\BLL\bin\Debug\BLL.pdb
+C:\Kuntal Work\Project Work\FormsSetupTool\FormsSetupTools\BLL\bin\Debug\BO.dll
+C:\Kuntal Work\Project Work\FormsSetupTool\FormsSetupTools\BLL\bin\Debug\DAL.dll
+C:\Kuntal Work\Project Work\FormsSetupTool\FormsSetupTools\BLL\bin\Debug\BO.pdb
+C:\Kuntal Work\Project Work\FormsSetupTool\FormsSetupTools\BLL\bin\Debug\DAL.pdb
+C:\Kuntal Work\Project Work\FormsSetupTool\FormsSetupTools\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Kuntal Work\Project Work\FormsSetupTool\FormsSetupTools\BLL\obj\Debug\BLL.dll
+C:\Kuntal Work\Project Work\FormsSetupTool\FormsSetupTools\BLL\obj\Debug\BLL.pdb

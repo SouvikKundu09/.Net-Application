@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:bons4="http://cpi/policy/get_expanded_vin_information_list_reply_epl2x1" xmlns:bons5="http://cpi/core/simple_fault" xmlns:bons6="http://cpi/policy/search_vin_information_by_criteria_request_epl2x1" xmlns:bons7="http://cpi/policy/search_vin_information_by_criteria_reply_epl2x1" xmlns:tns="http://cpi/policy/vin_information_retrieval_epl2x1" xmlns:bons1="http://cpi/technical/interface/vin_information_retrieval_epl2x1" xmlns:bons2="http://cpi/policy/get_best_match_vin_information_list_request_epl2x1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://cpi/policy/get_expanded_vin_information_list_request_epl2x1" xmlns:bons8="http://cpi/policy/get_best_match_vin_information_list_reply_epl2x1" name="VINInformationRetrievalEPL2x1" targetNamespace="http://cpi/policy/vin_information_retrieval_epl2x1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns:bons3="http://cpi/policy/vin_information_retrieval_epl2x1" xmlns:bons1="http://cpi/core/simple_fault" targetNamespace="http://cpi/policy/vin_information_retrieval_epl2x1">
+      <xsd:import schemaLocation="GetBestMatchVINInformationListReply.xsd" namespace="http://cpi/policy/get_best_match_vin_information_list_reply_epl2x1" />
+      <xsd:import schemaLocation="GetBestMatchVINInformationListRequest.xsd" namespace="http://cpi/policy/get_best_match_vin_information_list_request_epl2x1" />
+      <xsd:import schemaLocation="SearchVINInformationByCriteriaRequest.xsd" namespace="http://cpi/policy/search_vin_information_by_criteria_request_epl2x1" />
+      <xsd:import schemaLocation="SearchVINInformationByCriteriaReply.xsd" namespace="http://cpi/policy/search_vin_information_by_criteria_reply_epl2x1" />
+      <xsd:import schemaLocation="GetExpandedVINInformationListRequest.xsd" namespace="http://cpi/policy/get_expanded_vin_information_list_request_epl2x1" />
+      <xsd:import schemaLocation="GetExpandedVINInformationListReply.xsd" namespace="http://cpi/policy/get_expanded_vin_information_list_reply_epl2x1" />
+      <xsd:import schemaLocation="../Schemas/SimpleFault.xsd" namespace="http://cpi/core/simple_fault" />
+      <xsd:element name="GetExpandedVINInformationList">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="GetExpandedVINInformationListRequest" nillable="true" type="bons0:GetExpandedVINInformationListRequest" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetExpandedVINInformationListResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="GetExpandedVINInformationListReply" nillable="true" type="bons4:GetExpandedVINInformationListReply" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getExpandedVINInformationListFault1_SimpleFaultReply" nillable="true" type="bons1:SimpleFault" />
+      <xsd:element name="SearchVINInformationByCriteria">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="SearchVINInformationByCriteriaRequest" nillable="true" type="bons6:SearchVINInformationByCriteriaRequest" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="SearchVINInformationByCriteriaResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="SearchVINInformationByCriteriaReply" nillable="true" type="bons7:SearchVINInformationByCriteriaReply" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="searchVINInformationByCriteriaFault1_SimpleFaultReply" nillable="true" type="bons1:SimpleFault" />
+      <xsd:element name="GetBestMatchVINInformationList">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="GetBestMatchVINInformationListRequest" nillable="true" type="bons2:GetBestMatchVINInformationListRequest" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetBestMatchVINInformationListResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="GetBestMatchVINInformationListReply" nillable="true" type="bons8:GetBestMatchVINInformationListReply" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getBestMatchVINInformationListFault1_SimpleFaultReply" nillable="true" type="bons1:SimpleFault" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="GetBestMatchVINInformationListResponseMsg">
+    <wsdl:part name="GetBestMatchVINInformationListResult" element="tns:GetBestMatchVINInformationListResponse" />
+  </wsdl:message>
+  <wsdl:message name="SearchVINInformationByCriteriaRequestMsg">
+    <wsdl:part name="SearchVINInformationByCriteriaParameters" element="tns:SearchVINInformationByCriteria" />
+  </wsdl:message>
+  <wsdl:message name="GetExpandedVINInformationList_SimpleFaultReplyMsg">
+    <wsdl:part name="SimpleFaultReply" element="tns:getExpandedVINInformationListFault1_SimpleFaultReply" />
+  </wsdl:message>
+  <wsdl:message name="SearchVINInformationByCriteria_SimpleFaultReplyMsg">
+    <wsdl:part name="SimpleFaultReply" element="tns:searchVINInformationByCriteriaFault1_SimpleFaultReply" />
+  </wsdl:message>
+  <wsdl:message name="SearchVINInformationByCriteriaResponseMsg">
+    <wsdl:part name="SearchVINInformationByCriteriaResult" element="tns:SearchVINInformationByCriteriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExpandedVINInformationListRequestMsg">
+    <wsdl:part name="GetExpandedVINInformationListParameters" element="tns:GetExpandedVINInformationList" />
+  </wsdl:message>
+  <wsdl:message name="GetBestMatchVINInformationList_SimpleFaultReplyMsg">
+    <wsdl:part name="SimpleFaultReply" element="tns:getBestMatchVINInformationListFault1_SimpleFaultReply" />
+  </wsdl:message>
+  <wsdl:message name="GetBestMatchVINInformationListRequestMsg">
+    <wsdl:part name="GetBestMatchVINInformationListParameters" element="tns:GetBestMatchVINInformationList" />
+  </wsdl:message>
+  <wsdl:message name="GetExpandedVINInformationListResponseMsg">
+    <wsdl:part name="GetExpandedVINInformationListResult" element="tns:GetExpandedVINInformationListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="VINInformationRetrievalEPL2X1">
+    <wsdl:operation name="GetExpandedVINInformationList">
+      <wsdl:input name="GetExpandedVINInformationListRequest" message="tns:GetExpandedVINInformationListRequestMsg" />
+      <wsdl:output name="GetExpandedVINInformationListResponse" message="tns:GetExpandedVINInformationListResponseMsg" />
+      <wsdl:fault name="SimpleFaultReply" message="tns:GetExpandedVINInformationList_SimpleFaultReplyMsg" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchVINInformationByCriteria">
+      <wsdl:input name="SearchVINInformationByCriteriaRequest" message="tns:SearchVINInformationByCriteriaRequestMsg" />
+      <wsdl:output name="SearchVINInformationByCriteriaResponse" message="tns:SearchVINInformationByCriteriaResponseMsg" />
+      <wsdl:fault name="SimpleFaultReply" message="tns:SearchVINInformationByCriteria_SimpleFaultReplyMsg" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBestMatchVINInformationList">
+      <wsdl:input name="GetBestMatchVINInformationListRequest" message="tns:GetBestMatchVINInformationListRequestMsg" />
+      <wsdl:output name="GetBestMatchVINInformationListResponse" message="tns:GetBestMatchVINInformationListResponseMsg" />
+      <wsdl:fault name="SimpleFaultReply" message="tns:GetBestMatchVINInformationList_SimpleFaultReplyMsg" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

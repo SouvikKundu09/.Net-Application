@@ -1,0 +1,5 @@
+C:\Kuntal Work\Project Work\FormsSetupTool\FormsSetupTools\BO\bin\Release\BO.dll
+C:\Kuntal Work\Project Work\FormsSetupTool\FormsSetupTools\BO\bin\Release\BO.pdb
+C:\Kuntal Work\Project Work\FormsSetupTool\FormsSetupTools\BO\obj\Release\BO.dll
+C:\Kuntal Work\Project Work\FormsSetupTool\FormsSetupTools\BO\obj\Release\BO.pdb
+C:\Kuntal Work\Project Work\FormsSetupTool\FormsSetupTools\BO\obj\Release\BO.csprojResolveAssemblyReference.cache

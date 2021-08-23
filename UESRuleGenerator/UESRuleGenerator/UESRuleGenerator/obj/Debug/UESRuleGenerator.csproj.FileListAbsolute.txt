@@ -1,0 +1,8 @@
+\\mfrkntacewbt35\Cognizant\Souvik\Solutions\UESRuleGenerator\UESRuleGenerator\bin\Debug\UESRuleGenerator.exe.config
+\\mfrkntacewbt35\Cognizant\Souvik\Solutions\UESRuleGenerator\UESRuleGenerator\bin\Debug\UESRuleGenerator.exe
+\\mfrkntacewbt35\Cognizant\Souvik\Solutions\UESRuleGenerator\UESRuleGenerator\bin\Debug\UESRuleGenerator.pdb
+\\mfrkntacewbt35\Cognizant\Souvik\Solutions\UESRuleGenerator\UESRuleGenerator\obj\Debug\UESRuleGenerator.Form1.resources
+\\mfrkntacewbt35\Cognizant\Souvik\Solutions\UESRuleGenerator\UESRuleGenerator\obj\Debug\UESRuleGenerator.Properties.Resources.resources
+\\mfrkntacewbt35\Cognizant\Souvik\Solutions\UESRuleGenerator\UESRuleGenerator\obj\Debug\UESRuleGenerator.csproj.GenerateResource.Cache
+\\mfrkntacewbt35\Cognizant\Souvik\Solutions\UESRuleGenerator\UESRuleGenerator\obj\Debug\UESRuleGenerator.exe
+\\mfrkntacewbt35\Cognizant\Souvik\Solutions\UESRuleGenerator\UESRuleGenerator\obj\Debug\UESRuleGenerator.pdb

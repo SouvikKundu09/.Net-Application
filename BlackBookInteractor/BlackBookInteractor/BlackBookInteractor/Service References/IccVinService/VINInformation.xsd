@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:bons0="http://cpi/core/vin_information" targetNamespace="http://cpi/core/vin_information" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:complexType name="VINInformation">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="VehicleIdentificationNumber" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This element contains a unique number assigned by the manufacturer.   The amount and type of the information provided by the number varies by manufacturer.  Typically, the VIN identifies the manufacturer, model, year and serial number of the vehicle.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="ManufacturersName" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This element contains the name used to indentify the manufacturer of the piece of equipment, such as a vehicle or watercraft.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="ModelName" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This element contains the name assigned to a specific piece of equipment by the manufacturer.  It indentifies the specific model within the trade name.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="ModelYear">
+        <xsd:annotation>
+          <xsd:documentation>This element contains the year assigned to the specific equipment, such as a watercraft or vehicle.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:length value="4" />
+            <xsd:pattern value="\d\d\d\d" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="PostalStateAbbreviation">
+        <xsd:annotation>
+          <xsd:documentation>This element is the two character US Postal State Abbreviation. 
+The E1T00111 Corporate Table contains valid values for this element in the "PSTL_ST_AB" column. </xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:length value="2" />
+            <xsd:pattern value="[A-Z][A-Z]" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="VehicleCollisionSymbol" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This element contains a symbol that represents the value of the vehicle based on factors such as manufacturers suggested retail price and loss experience over time to arrive at the vehicle symbol that will be in rating collision coverage.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="VehicleComprehensiveSymbol" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This element contains a symbol that represents the value of the vehicle based on factors such as manufacturers suggested retail price and loss experience over time to arrive at the vehicle symbol that will be in rating comprehensive coverage.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="VehicleSymbolCode" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This element contains the code used for rating automobiles.  </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="VehiclePerformanceCode" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This element contains a code that identifies if a vehicle is a standard, intermediate, high performance or sports car, or sub-compact.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="AverageRetailPriceAmount" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This element contains the vehicle's average retail price.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="VehicleOriginalCostNewAmount" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This element contains the dollar amount of the vehicle when purchased new.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="PassiveRestraintCode" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This element contains a code that identifies if the vehicle has a passive restraint system and what kind of passive restraint system it is.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="AntiLockBrakeCode" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This element contains a code that identifies the anti-lock brake system on the vehicle.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="DaytimeRunningLightsCode" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This element contains a code that identifies if daytime running lights are installed in the vehicle and their category.
+Valid values for this element include: 'S' - Standard, 'O' - Optional, 'N' - None.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="VehicleBodyTypeDescription" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>&lt;br /&gt;
+&lt;p&gt;
+    This element&amp;nbsp;decribes the body style of the&amp;nbsp;vehicle.&lt;br /&gt;
+    &amp;nbsp;
+&lt;/p&gt;</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="ISOAntiTheftDeviceCode" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>&lt;br /&gt;
+&lt;p&gt;
+    This element contains the ISO code for the ant-theft device in the vehicle.
+&lt;/p&gt;</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="VehiclePersonalInjuryProtectionSymbol" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>&lt;br /&gt;
+&lt;p&gt;
+    This element contains a symbol represents the value of the vehicle base on factors such as manufacturer's suggested
+    retail price and loss experience over time to arrive at the vehicle symbol used in rating personal injury protection
+    {PIP} coverage.
+&lt;/p&gt;</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="VehicleLiabilitySymbol" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>&lt;p&gt;
+    This element contains a symbol represent the value of the vehicle based on factors such as manufacturer's suggested
+    retail price and loss experience over time to arrive at the vehicle symbol that will be used in rating liability
+    coverage.
+&lt;/p&gt;</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:this="http://cpi/policy/vin_information_retrieval_epl2x1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" name="VINInformationRetrievalEPL2X1Http_VINInformationRetrievalEPL2X1Http_Service" targetNamespace="http://cpi/policy/vin_information_retrieval_epl2x1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://cpi/policy/vin_information_retrieval_epl2x1" location="VINInformationRetrievalEPL2X1.wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="VINInformationRetrievalEPL2X1Http_VINInformationRetrievalEPL2X1HttpBinding" type="this:VINInformationRetrievalEPL2X1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetExpandedVINInformationList">
+      <soap:operation soapAction="" />
+      <wsdl:input name="GetExpandedVINInformationListRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetExpandedVINInformationListResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SimpleFaultReply">
+        <soap:fault use="literal" name="SimpleFaultReply" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SearchVINInformationByCriteria">
+      <soap:operation soapAction="" />
+      <wsdl:input name="SearchVINInformationByCriteriaRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SearchVINInformationByCriteriaResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SimpleFaultReply">
+        <soap:fault use="literal" name="SimpleFaultReply" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetBestMatchVINInformationList">
+      <soap:operation soapAction="" />
+      <wsdl:input name="GetBestMatchVINInformationListRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetBestMatchVINInformationListResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SimpleFaultReply">
+        <soap:fault use="literal" name="SimpleFaultReply" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VINInformationRetrievalEPL2X1Http_VINInformationRetrievalEPL2X1HttpService">
+    <wsdl:port name="VINInformationRetrievalEPL2X1Http_VINInformationRetrievalEPL2X1HttpPort" binding="this:VINInformationRetrievalEPL2X1Http_VINInformationRetrievalEPL2X1HttpBinding">
+      <soap:address location="http://eivininfortrvlepl2x1-ut:80/CPIServicesWeb/sca/VINInformationRetrievalEPL2X1Http" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

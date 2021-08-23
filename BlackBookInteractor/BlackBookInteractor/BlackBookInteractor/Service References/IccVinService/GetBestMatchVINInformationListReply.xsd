@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:bons0="http://cpi/core/status_information" xmlns:bons1="http://cpi/policy/get_best_match_vin_information_output_epl2x1" targetNamespace="http://cpi/policy/get_best_match_vin_information_list_reply_epl2x1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="GetBestMatchVINInformationOutput.xsd" namespace="http://cpi/policy/get_best_match_vin_information_output_epl2x1" />
+  <xsd:import schemaLocation="../Schemas/StatusInformation.xsd" namespace="http://cpi/core/status_information" />
+  <xsd:complexType name="GetBestMatchVINInformationListReply">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="GetBestMatchVINInformationOutput" type="bons1:GetBestMatchVINInformationOutput" />
+      <xsd:element minOccurs="0" name="HighLevelStatusInformation" type="bons0:StatusInformation" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

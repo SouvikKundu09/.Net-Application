@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:bons1="http://cpi/core/vin_information" xmlns:bons2="http://cpi/core/error" targetNamespace="http://cpi/policy/get_expanded_vin_information_output_epl2x1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="../Schemas/VINInformation.xsd" namespace="http://cpi/core/vin_information" />
+  <xsd:import schemaLocation="../Schemas/Error.xsd" namespace="http://cpi/core/error" />
+  <xsd:complexType name="GetExpandedVINInformationOutput">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="VINInformation" type="bons1:VINInformation" />
+      <xsd:element minOccurs="0" name="ErrorInformation" type="bons2:Error" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
